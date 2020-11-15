@@ -16,7 +16,7 @@
       <nav class="header-items main-1200">
         <a href="#company" class="link-logo-h"><span class="web">Web</span>Studio</a>
         <ul class="menu">
-          <li class="menu-item"><a href="index.html" class="menu-nav studio">Студия</a></li>
+          <li class="menu-item"><a href="index.html" class="menu-nav current">Студия</a></li>
           <li class="menu-item"><a href="portfolio.html" class="menu-nav">Портфолио</a></li>
           <li class="menu-item"><a href="#contacts" class="menu-nav">Контакты</a></li>
         </ul>
@@ -40,7 +40,7 @@
     <div class="container">
       <section class="hero">
         <h1 class="hero-title main-1200">эффективные решения <br>для вашего бизнеса</h1>
-        <button class="hero-button">Заказать услугу</button>
+        <button class="hero-button" data-modal-open>Заказать услугу</button>
       </section>
     </div>
     <div class="container">
@@ -102,9 +102,24 @@
       <section class="main-1200">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="our-work">
-          <li><img src="images/img(7).jpg" width="370" height="294" alt="ПК" /></li>
-          <li><img src="images/img(1).jpg" width="370" height="294" alt="Лептоп" /></li>
-          <li><img src="images/img(2).jpg" width="370" height="294" alt="Таблет" /></li>
+          <li class="our-work-list">
+            <img src="images/img(7).jpg" width="370" height="294" alt="ПК" />
+            <div class="our-work-direction">
+          <p class="our-work-discription">Десктопные приложения</p>
+            </div>
+        </li>
+          <li class="our-work-list">
+            <img src="images/img(1).jpg" width="370" height="294" alt="Лептоп" />
+            <div class="our-work-direction">
+          <p class="our-work-discription">Мобильные приложения</p>
+           </div>
+        </li>
+          <li class="our-work-list">
+            <img src="images/img(2).jpg" width="370" height="294" alt="Таблет" />
+            <div class="our-work-direction">
+          <p class="our-work-discription">Дизайнерские решения</p>
+          </div>
+        </li>
         </ul>
       </section>
     </div>
@@ -358,6 +373,20 @@
       </div>
     </footer>
   </div>
+
+<!-- <button data-open-modal>Открыть модалку</button> -->
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="backdrop-modal">
+    <div class="modal">
+      <button class="close" data-modal-close>
+        X
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
